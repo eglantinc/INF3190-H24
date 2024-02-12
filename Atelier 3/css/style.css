@@ -1,37 +1,63 @@
+/* Réinitialisation des styles par défaut */
+
+html {
+    box-sizing: border-box;
+}
+
+/**Avec box-sizing: border-box;, la largeur et la hauteur d'un élément incluent le contenu, le padding et la bordure, mais pas les marges extérieures. Alors, lorsque vous définissez la largeur ou la hauteur d'un élément, vous incluez la taille de la bordure et du padding, mais pas des marges. Ex: Définir la largeur de l'élément à 300 pixels inclura automatiquement le padding et la bordure, ce qui simplifie la gestion des dimensions. **/
+
+*, *::before, *::after {
+    box-sizing: inherit; /** Cela permet d'hériter du modèle de boîte défini précédemment sur 					l'élément html **/
+    /** Garantir qu'aucun espace supplémentaire n'est ajouté automatiquement autour des éléments**/
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
-    background-color: gray;
+    background-color: gray; /** Pas demander, mais pour être capable de voir le paragraphe 2 **/
 }
 
 h1 {
     color: red;  
     text-decoration: underline;
-    font-size: 75%
+    font-size: 75% /** Pour définir la taille de la police d'un élément à 75% de la taille de la 			
+                    police de son parent direct, body dans ce cas (16 px par défaut).
+                    Proportionnel à la dimension du contenant (mot clé, fin de session)**/
    
 }
 
-.p1{
+.paragraphe-1{
     color: blue;
 }
 
-.p2 {
+.paragraphe-2 {
     color: white;
-}
-
-.p3  {
-    color: red;
-}
-
-p {
-    font-family: 'Courier New', Courier, monospace;
     margin: 50px;
 }
 
+.paragraphe-3  {
+    color: red;
+}
+
+/** TOUS les paragraphes seront affectés**/
+p {
+    font-family: 'Courier New', Courier, monospace;
+  
+}
+
+#monnom {
+    font-weight:  bold;
+}
+
 #monnom:hover{
-    cursor: pointer;
+    cursor: pointer; /**Lorsque l'utilisateur survole le bouton, changer le curseur en une main 			**/
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
+    /** Sera exploré en fin de session **/
+    display: flex; 
+    flex-direction: column; /** Spécifie la direction principale dans laquelle les éléments 					flexibles sont affichés à l'intérieur de leur conteneur (form 					dans ce cas-ci) **/
+    width: 500px; /** Définir une largeur statique de 500 pixels pour l'élément, indépendamment 
+			de la largeur de la page **/
 }

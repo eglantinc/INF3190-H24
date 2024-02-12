@@ -1,0 +1,37 @@
+body {
+    background-color: gray;
+}
+
+h1 {
+    color: red;  
+    text-decoration: underline;
+    font-size: 75%
+   
+}
+
+.p1{
+    color: blue;
+}
+
+.p2 {
+    color: white;
+}
+
+.p3  {
+    color: red;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 50px;
+}
+
+#monnom:hover{
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}

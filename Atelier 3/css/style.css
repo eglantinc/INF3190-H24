@@ -21,9 +21,7 @@ body {
 h1 {
     color: red;  
     text-decoration: underline;
-    font-size: 75% /** Pour définir la taille de la police d'un élément à 75% de la taille de la 			
-                    police de son parent direct, body dans ce cas (16 px par défaut).
-                    Proportionnel à la dimension du contenant (mot clé, fin de session)**/
+    font-size: 75% /** Pour définir la taille de la police d'un élément à 75% de la dimension du contenant (mot clé)**/
    
 }
 

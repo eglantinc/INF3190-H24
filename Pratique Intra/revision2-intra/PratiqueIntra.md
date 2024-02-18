@@ -37,8 +37,6 @@
     - C. HTTP/3 utilise QUIC pour réduire la latence
     - D. Toutes ces réponses
     - E. Aucune de ces réponses
-      Basé sur le contenu du PDF "INF3190 – HTML" que j'ai parcouru, voici un QCM adapté à la présentation, incluant des options "aucune de ces réponses" et "toutes ces réponses" pour chaque question :
-
 
 6. **Quelle balise HTML sert à définir le corps d'un document ?**
     - A. `<head>`
@@ -158,7 +156,7 @@
     - C. Inclure une balise `<link>` spécifiant l'encodage
     - D. Toutes ces réponses
     - E. Aucune de ces réponses
-      D'accord, voici un ensemble de questions plus avancées basées sur le document "INF3190 – CSS" que vous avez partagé, en incluant des options "aucune de ces réponses" et "toutes ces réponses" :
+      D'accord, voici un ensemble de questions plus avancées basées sur le document "INF3190 – 
 
 
 21. **Quel sélecteur CSS appliquerait un style aux liens non visités ?**

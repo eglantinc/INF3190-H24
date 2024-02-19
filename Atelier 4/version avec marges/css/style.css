@@ -1,0 +1,62 @@
+/* Définition de la boîte de dimensionnement pour tous les éléments HTML
+et leurs pseudo-éléments ::before et ::after*/
+html, *, *:before, *:after {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Kode Mono', monospace; /* Trouvé sur google font*/
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px; 
+    text-align: center;
+}
+
+.article {
+    float: left;
+    width: 74.5%; /* Quand on diminue  ici, faire un calcul pour garder une certaine  consistance*/
+    margin-right: 0.5%; /* 74.5% - 0.5% */
+    padding: 20px;
+    border: 2px dotted #ccc;
+}
+
+main {
+    margin:2.5%; /*Ajouter une marge autour de  l'article et du sidebar*/
+}
+
+.article .meta {
+    font-style: italic;
+    font-size: 10px;
+}
+
+.sidebar {
+    float: right;
+    width: 25%; 
+    padding: 20px; 
+    background-color: #f9f9f9;
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style-type: none; /* Supprime la puce de la liste, tout en préservant sa nature de liste, ce qui important pour la sémantique */
+    padding: 0;  /*Enlever le padding de la liste*/
+}
+
+.sidebar li {
+    margin-bottom: 10px; /* Crée un espace entre les items de l'article*/
+    
+}
+
+.sidebar li:hover {
+    color: green;
+    cursor: pointer;
+}
+

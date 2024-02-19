@@ -196,7 +196,6 @@
     - B. `in`
     - C. `em`
     - D. Toutes ces réponses sont correctes
-    - E. Aucune de ces réponses
 
 
 26. **Quel attribut de formulaire spécifie la manière dont les données doivent être envoyées au serveur ?**

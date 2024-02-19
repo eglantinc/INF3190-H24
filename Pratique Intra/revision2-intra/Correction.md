@@ -74,7 +74,7 @@
     - **B. `border-radius`**
 
 25. **Laquelle des propriétés suivantes n'est pas une unité de mesure en CSS ?**
-    - **E. Aucune de ces réponses** *(Toutes sont des unités de mesure en CSS.)*
+    - **D. Toutes ces réponses sont correctes*
 
 26. **Quel attribut de formulaire spécifie la manière dont les données doivent être envoyées au serveur ?**
     - **B. `method`**

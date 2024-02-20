@@ -1,0 +1,146 @@
+/* Rappel: Définition de la boîte de dimensionnement pour tous les éléments HTML
+et leurs pseudo-éléments ::before et ::after
+
+Pourquoi? Par défaut, les éléments en CSS utilisent le modèle de boîte content-box. 
+Donc, la largeur et la hauteur spécifiées pour un élément concernent uniquement son contenu. Par conséquent, bordures et le padding s'ajoutent à cette dimension spécifiée, 
+rendant l'élément plus grand que ce que vous pourriez attendre. Border-box est utilisé pour contourner cela de soirte à ce que Ll largeur et la hauteur définies 
+pour un élément incluent le contenu, les bordures et les marges internes */
+
+html, *, *:before, *:after {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Kode Mono', monospace; /* Trouvé sur google font*/
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px; 
+    text-align: center;
+}
+
+header ul {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+header a  {
+    color: green;
+}
+
+.article {
+    float: left;
+    width: 74.5%; /* Quand on diminue  ici, faire un calcul pour garder une certaine  consistance*/
+    margin-right: 0.5%; /* 74.5% - 0.5% */
+    padding: 20px;
+    border: 2px dotted #ccc;
+}
+
+main {
+    margin:2.5%; /*Ajouter une marge autour de  l'article et du sidebar*/
+}
+
+.article .meta {
+    font-style: italic;
+    font-size: 10px;
+}
+
+.sidebar {
+    float: right;
+    width: 25%; 
+    padding: 20px; 
+    background-color: #f9f9f9;
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style-type: none; /* Supprime la puce de la liste, tout en préservant sa nature de liste, ce qui important pour la sémantique */
+    padding: 0;  /*Enlever le padding (par défaut) de la liste*/
+}
+
+.sidebar li {
+    margin-bottom: 10px; /* Crée un espace entre les items de l'article*/
+    
+}
+
+.sidebar li:hover {
+    color: green;
+    cursor: pointer;
+}
+
+p a {
+    color: green;
+    font-weight: bold;
+}
+
+#lien-interne {
+    color: green;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+    transform: scale(1.1);
+    transition: transform 0.25s, color 0.25s; /* Spécifie des transitions douces pour la transformation et la couleur d'un élément, 
+    chacune sur une durée de 0.25 seconde. Attention : n'en abuser surtout pas, ça pourrait nuire à
+    l'expérience utilisateur. De plus, plus le nombre de seconde est élevé, plus la transition est lente.
+    Donc, 0.25 seconde est assez raisonnable.  Le premier 0.25 est associé à l'aggrandissement et le deuxième à la couleur*/
+}
+
+input[type="radio"] {
+    accent-color: green; /* Changer  la couleur du  picot */
+}
+
+input[type="checkbox"] {
+    accent-color: green; /* Changer  la couleur du checkbox */
+}
+
+form {
+    width: 500px;
+    margin: auto; /* Centre le formulaire horizontalement dans le form-container */
+    line-height: 25px; /* Largeur de l'espace de séparation entre les éléments du formulaire */
+}
+
+form input[type=text] {
+    width: 500px;
+}
+
+form button {
+    font-family: 'Kode Mono', monospace;
+    background-color: black;
+    color: green;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+}
+
+form button:hover {
+    cursor: pointer;
+    color: white;
+    transform: scale(1.1); /* Fait grossir le bouton lorsqu'on promène la souris dessus. 
+                            Le bouton s'agrandit de 10% quand on passe la souris dessus. 
+                            Si on voulait réduire le bouton de 10%, ce serait .9. */ 
+    transition: transform 0.25s, color 0.25s; 
+}
+
+.button-container {
+    width: 100%; /* S'assure  que le div du bouton prenne toute la largeur du formulaire (son parent). */
+    display: flex;  /* Utilise Flexbox pour centrer le bouton à l'horizontale dans son conteneur. */
+    justify-content: center; /* Centre  le bouton (important d'utiliser avec display flex) */
+}
+

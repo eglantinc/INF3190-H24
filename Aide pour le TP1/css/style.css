@@ -111,7 +111,7 @@ input[type="checkbox"] {
 
 form {
     width: 500px;
-    margin: auto; /* Centre le formulaire horizontalement dans le form-container */
+    margin: auto; /* Centre le formulaire horizontalement dans son contenant (son parent)*/
     line-height: 25px; /* Largeur de l'espace de séparation entre les éléments du formulaire */
 }
 

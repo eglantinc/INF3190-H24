@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Importation des polices depuis Google Fonts. Suivez les instructions pour intégrer différentes familles de polices. Allez sur google font, sélectionnez "Get font" (en haut à droite), Get embebed code, option 'link<>', copier -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Kode+Mono:wght@400..700&family=Lato:wght@100;300;400;700&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Le header inclut notamment le logo, le titre du site et la barre de navigation. -->
+        <img src="img/logo.png" alt="Logo du site">
+        <h1>CodeCrafters</h1>
+        <nav class="nav-links">
+            <ul>
+                <li class="nav-items"> <a href="index.html">Accueil</a></li>
+                <li class="nav-items"><a href="mimpliquer.html">M'impliquer</a></li>
+                <!-- Pour ajouter plus d'options, suivez la même structure de liste. -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Le main contient le contenu spécifique à chaque page. -->
+            <form> 
+                <h2>Informations personnelles :</h2>
+                <label for="name">Nom </label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="prenom">Prénom </label>
+                <input type="text" id="prenom" name="prenom" required><br>
+                
+                <label for="courriel">Courriel </label>
+                <input type="text" id="courriel" name="courriel" required>
+                
+                <!-- Assurez-vous que tous les champs radio partagent le même attribut "name" pour 
+                    garantir que l'utilisateur ne puisse sélectionner qu'une seule option 
+                    parmi eux. C'est essentiel pour le fonctionnement attendu des boutons radio 
+                    (qui est de permettre une unique sélection.) -->
+                <div class="radio-container">
+                    <h2>Engagement bénévole :</h2>
+                    <input type="radio" id="moins-six" name="engagement" value="moins-six" checked required>
+                    <label for="moins-six">Moins de six mois</label><br>
+                    <input type="radio" id="plus-six" name="engagement" value="plus-six" required>
+                    <label for="plus-six">De six mois à un an</label><br>
+                    <input type="radio" id="continu" name="engagement" value="continu" required>
+                    <label for="continu">Continu</label><br>
+                    <label for="autre">Autre :</label><br>
+                    <input type="text" id="autre" name="autre" required><br>
+                </div>
+
+                <!-- Sélection de la province à l'aide d'un menu déroulant. -->
+                <div class="select-container">
+                    <h2>Sélectionnez votre province :</h2>
+                    <select name="provinces" required>
+                        <option value="">-- </option>
+                        <!-- Assurez-vous que chaque option a une valeur pour la validation HTML. -->
+                        <option value="ab">Alberta</option>
+                        <option value="bc">Colombie-Britannique</option>
+                        <option value="mb">Manitoba</option>
+                        <option value="nb">Nouveau-Brunswick</option>
+                        <option value="nl">Terre-Neuve-et-Labrador</option>
+                        <option value="ne">Nouvelle-Écosse</option>
+                        <option value="on">Ontario</option>
+                        <option value="pe">Île-du-Prince-Édouard</option>
+                        <option value="qc">Québec</option>
+                        <option value="sk">Saskatchewan</option>
+                    </select>
+                </div>
+                <br>
+                <!-- Case à cocher -->
+                <div class="checkbox-container">
+                    <label for="offre-benevolat">Je souhaite être avisé des nouvelles offres de bénévolat.</label>
+                    <input type="checkbox" id="offre-benevolat" name="offre-benevolat">
+                </div>
+                
+                <div class="button-container">
+                    <!-- Bouton de soumission du formulaire. -->
+                    <button type="submit">Soumettre</button>
+                </div>
+            </form>
+    </main>
+</body>
+</html>

@@ -309,47 +309,13 @@ e) Un microservice
 f) Aucune de ces réponses
 
 Question #4
-Quel terme décrit le mieux une application web avec beaucoup de logique d'affaires écrite en
-Javascript interprété par le fureteur?
-a) Serveur lourd (fat server)
-b) Serveur léger (thin server)
-c) Client lourd (fat client)
-d) Client léger (thin client)
-
-Question #5
-Dans l'architecture client-serveur classique, le client est connecté à combien de serveurs
-simultanément?
-a) 0
-b) 1
-c) 2
-d) 3
-e) Le nombre n'est pas connu à l'avance, ça dépend du traffic sur le site web
-
-Question #6
-Quelle technologie n'est pas interprété par un fureteur?
-a) Python
-b) Javascript
-c) HTML
-d) CSS
-e) Aucune de ces réponses
-
-Question #7
-Quel port est écouté par défaut par un serveur HTTP?
-a) 25
-b) 5000
-c) 80
-d) 8888
-e) 3000
-f) 21
-
-Question #8
 Quel contenant est utilisé pour envoyer un document HTML au fureteur?
 a) Le head d'une requête HTTP
 b) Le body d'une requête HTTP
 c) Le head d'une réponse HTTP
 d) Le body d'une réponse HTTP
 
-Question #9
+Question #5
 Quelle affirmation suivante est fausse?
 a) Aucun utilisateur ne peut lire le code du frontend
 b) Le frontend n'accède pas directement à la base de données
@@ -357,7 +323,7 @@ c) Le backend est l'intermédiaire entre le frontend et la base de données
 d) Le frontend est exécuté dans le fureteur
 e) Le backend est exécuté sur le serveur
 
-Question #10
+Question #6
 Que doit-on faire si un algorithme breveté ne doit pas être accessible par la concurrence?
 a) Mettre l'algorithme dans le frontend
 b) Mettre l'algorithme dans le backend
@@ -365,7 +331,7 @@ c) Mettre l'algorithme dans le frontend, en maquillant le code pour le rendre il
 d) Mettre l'algorithme dans le backend et le frontend
 e) Aucune de ces réponses
 
-Question #11
+Question #7
 Quelles sont les méthodes supportées par les formulaires HTML?
 a) GET et PUT
 b) PUT et DELETE
@@ -375,7 +341,7 @@ e) GET et POST
 f) POST et DELETE
 g) Aucune de ces réponses
 
-Question #12
+Question #8
 Quelle méthode permet à un formulaire HTML d'envoyer les données encodées dans le body de la
 requête HTTP?
 a) GET
@@ -385,7 +351,7 @@ d) HEAD
 e) POST
 f) Aucune de ces réponses
 
-Question #13
+Question #9
 Quelle méthode permet à un formulaire HTML d'envoyer un mot de passe encrypté
 automatiquement dans la requête HTTP?
 a) GET
@@ -395,24 +361,8 @@ d) HEAD
 e) POST
 f) Aucune de ces réponses
 
-Question #14
-Quelle affirmation suivante est fausse?
-a) Un champ de formulaire est un point d'entrée possible pour l'injection SQL.
-b) Un paramètre d'URL est un point d'entrée possible pour l'injection SQL.
-c) Un cookie est un point d'entrée possible pour l'injection SQL.
-d) Un champ caché dans un formulaire est un point d'entrée possible pour l'injection SQL.
-e) Aucune de ces réponses
 
-Question #15
-Quelle affirmation suivante est fausse?
-a) Une URL contient toujours une route.
-b) Une URL contient toujours un nom de domaine ou une adresse IP.
-c) La méthode HTTP GET sert à lire l'état d'une ressource.
-d) Une URL contient toujours un numéro de port.
-e) Une URL peut contenir des paramètres optionnels.
-f) Flask utilise le port 5000 par défaut.
-
-Question #16
+Question #10
 Quel code de statut HTTP doit-on retourner lorsqu'une requête de type GET a fonctionné
 correctement?
 a) 200
@@ -422,7 +372,7 @@ d) 403
 e) 404
 f) 500
 
-Question #17
+Question #11
 Quel code de statut HTTP doit-on retourner lorsqu'une requête de type GET fait référence à une
 ressource inexistante?
 a) 200
@@ -432,7 +382,7 @@ d) 403
 e) 404
 f) 500
 
-Question #18
+Question #12
 Quel code de statut HTTP doit-on retourner lorsqu'une requête de type POST ne contient pas toutes
 les données qu'elle devrait contenir?
 a) 200
@@ -441,30 +391,3 @@ c) 400
 d) 403
 e) 404
 f) 500
-
-Question #19
-Dans l'éventualité où nous voudrions changer de type de base de données dans le futur, que
-pouvons-nous faire pour faciliter ce changement futur?
-a) Ne pas utiliser de base de données
-b) Isoler le code qui utilise la base de données
-c) Ne pas changer de base de données
-d) Utiliser une librairie qui fonctionne avec toutes les bases de données
-e) Aucune de ces réponses
-
-Question #20
-Quelle ligne de code permet de générer une page 404 avec Flask?
-a) return 404
-b) return make_response(render_template('404.html'))
-c) return render_template('404.html'), 404
-d) return render_template('404.html')
-e) return response.render_template('404.html')
-
-
-Question #21
-Quels composants peuvent définir un cookie?
-a) Le fureteur seulement
-b) Le serveur seulement
-c) Le fureteur et le serveur
-d) Le fureteur et le client
-e) Aucune de ces réponses
-Questions à choix multiples Page 8 de 8

@@ -94,11 +94,10 @@ nav a {
 
 nav a:hover {
     color: white;
-    transform: scale(1.1);
-    transition: transform 0.25s, color 0.25s; /* Spécifie des transitions douces pour la transformation et la couleur d'un élément, 
+    transition: color 0.25s; /* Spécifie des transitions douces pour la transformation et la couleur d'un élément, 
     chacune sur une durée de 0.25 seconde. Attention : n'en abuser surtout pas, ça pourrait nuire à
     l'expérience utilisateur. De plus, plus le nombre de seconde est élevé, plus la transition est lente.
-    Donc, 0.25 seconde est assez raisonnable.  Le premier 0.25 est associé à l'aggrandissement et le deuxième à la couleur*/
+    Donc, 0.25 seconde est assez raisonnable.*/
 }
 
 input[type="radio"] {
@@ -135,7 +134,7 @@ form button:hover {
     transform: scale(1.1); /* Fait grossir le bouton lorsqu'on promène la souris dessus. 
                             Le bouton s'agrandit de 10% quand on passe la souris dessus. 
                             Si on voulait réduire le bouton de 10%, ce serait .9. */ 
-    transition: transform 0.25s, color 0.25s; 
+    transition: transform 0.25s, color 0.25s; /*Le premier 0.25 est associé à l'aggrandissement et le deuxième à la couleur*/
 }
 
 .button-container {

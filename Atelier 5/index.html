@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Atelier - 5</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Formulaire d'admission</h1>
+
+    <p> Ce formulaire nous permet de mieux comprendre vos qualifications 
+        et votre expérience dans le domaine de l'informatique, afin de vous accueillir en tant que membre.</p>
+            <!--Ne fait rien, on n'a pas encore de backend-->
+            <form method="POST"> 
+                <h2>Informations personnelles :</h2>
+                <label for="nom">Nom </label>
+                <!--Required permet de rendre les champs  «obligatoires», mais ne remplace PAS
+                    la validation backend!-->
+                <input type="text" id="nom" name="nom" required maxlength="40"><br>
+                <label for="prenom">Prénom </label>
+                <input type="text" id="prenom" name="prenom" required maxlength="50"><br>
+                <label for="age">Âge </label>
+                <input type="text" id="age" name="age" required maxlength="2"><br>
+                
+                    <h2>Informations académiques : </h2>
+                    <label for="annee">Année de diplomation </label>
+                    <input type="text" id="annee" name="annee" placeholder="Ex. 2024" maxlength="4"><br>
+
+                    <label>Établissement d'étude : </label> <br>
+                    <select name="provinces" required>
+                        <option value="">-- </option>
+                        <option value="mg">McGill University</option>
+                        <option value="uqam">Université du Québec à Montréal</option>
+                        <option value="udem">Université de Montréal</option>
+                        <option value="uoft">University of Toronto</option>
+                        <option value="cu">Concordia University</option>
+                        <option value="ulaval">Université de Laval</option>
+                        <option value="bu">Bishop's University</option>
+                        <option value="pe">École de technologie supérieure</option>
+                    </select>
+                <br>
+                <label for="nom-prog">Nom de votre programme d'étude : </label>
+                <input type="text" id="nom-prog" name="nom-prog" required maxlength="40"><br>
+                
+                <div class="radio-container">
+                    <h2>Type d'admission :</h2>
+                    <input type="radio" id="regulier" name="type" value="moins-six" checked required>
+                    <label for="regulier">Membre régulier</label><br>
+                    <input type="radio" id="or" name="type" value="or" required>
+                    <label for="or">Membre or</label><br>
+                    <input type="radio" id="observateur" name="type" value="observateur" required>
+                    <label for="observateur">Membre observateur</label><br>
+                    <input type="radio" id="junior" name="type" value="junior" required>
+                    <label for="junior">Membre junior</label><br>
+                </div>
+                <br>
+                <label for="parcours">Veuillez décrire votre parcours professionnel :</label> <br>
+                <textarea id="parcours" name="parcours" maxlength="40" rows="4" required></textarea>
+                <div class="button-container">
+                    <button type="submit">Soumettre</button>
+                </div>
+            </form>
+</body>
+</html>

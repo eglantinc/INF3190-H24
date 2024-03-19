@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form id="formulaire" method="post">
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom">
+    <span id="erreur-nom" class="erreur"></span>
+    <br><br>
+
+    <label for="prenom">Prénom:</label>
+    <input type="text" id="prenom" name="prenom">
+    <span id="erreur-prenom" class="erreur"></span>
+    <br><br>
+
+    <label for="date">Date de Naissance:</label>
+    <input type="text" id="date" name="date" placeholder="AAAA-MM-JJ">
+    <span id="erreur-date-naissance" class="erreur"></span>
+    <br><br>
+
+    <label for="genre">Genre (F ou M):</label>
+    <input type="text" id="genre" placeholder="F ou H">
+    <span id="erreur-genre" class="erreur"></span>
+    <br><br>
+
+    <label for="code-permanent">Code Permanent:</label>
+    <input type="text" id="code-permanent" name="code-permanent" placeholder="ABCD12345678">
+    <span id="erreur-code-permanent" class="erreur"></span>
+    <br><br>
+
+    <label for="service">Êtes-vous satisfait de notre service?</label>
+    <input type="radio" id="satisfait" name="satisfaction" value="oui">
+    <label for="satisfait">Oui</label>
+    <input type="radio" id="pas-satisfait" name="satisfaction" value="non">
+    <label for="pas-satisfait">Non</label>
+    <span id="msg-satisfaction"></span>
+    <span class="erreur" id="erreur-satisfaction"></span>
+    
+    
+    <div class="button-container">
+        <button type="submit" id="soumettre">Soumettre</button>
+        <button style="display: none;" type="button" id="remplir-encore">Remplir à nouveau</button>
+    </div>
+     <span class="erreur" id="erreur-global"></span>
+     <span id="remerciement"></span>
+     <script src="static/js/script.js"></script>
+    </form>
+</body>
+</html>

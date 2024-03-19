@@ -1,0 +1,47 @@
+
+html, *, *:before, *:after {
+    box-sizing: border-box; 
+    font-family: "Playfair Display", serif;
+}
+
+form button {
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+}
+
+form {
+    width: 500px;
+    margin: auto; /* Centre le formulaire horizontalement dans son contenant (son parent)*/
+    line-height: 25px; /* Largeur de l'espace de séparation entre les éléments du formulaire */
+}
+
+form input[type=text] {
+    width: 500px;
+}
+
+form button:hover {
+    cursor: pointer;
+    transform: scale(1.1); 
+    transition: transform 0.25s, color 0.25s;
+}
+
+.button-container {
+    width: 100%; /* S'assure  que le div du bouton prenne toute la largeur du formulaire (son parent). */
+    display: flex;  /* Utilise Flexbox pour centrer le bouton à l'horizontale dans son conteneur. */
+    justify-content: center; /* Centre  le bouton (important d'utiliser avec display flex) */
+}
+
+#erreur-global {
+    font-weight: bold;
+}
+.erreur {
+    color: red;
+    font-size: 0.8em;
+}
+
+#remerciement {
+    color: green;
+    font-weight: bold;
+}

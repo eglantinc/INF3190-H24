@@ -39,6 +39,7 @@ function validerFormulaire() {
 
 }
 
+// Souvent oublié, mais IMPORTANT; Il faut absolument permettre de remplir le formulaire à nouveau!!!*
 function remplirEncore() {
     document.getElementById('remplir-encore').addEventListener('click', () => {
         // Réinitialiser le formulaire en effaçant toutes les valeurs et en réaffichant le bouton de soumission

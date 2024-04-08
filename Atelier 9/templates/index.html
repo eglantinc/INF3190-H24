@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<!-- Quand tu appuies sur le bouton "Envoyer" du formulaire, toutes les données
+que tu as entrées sont rassemblées et envoyées à l'URL spécifiée dans l'attribut action-->
+<form action="/valider" method="post" id="monFormulaire">
+    <!-- action="/" : Route de traitement (fonction python)-->
+
+    <!-- Section Nom -->
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom"><br><br>
+    <span class="erreur" id="erreur-nom"></span>
+
+    <!-- Section Pays -->
+    <p>Quel pays aimeriez-vous visiter?</p>
+    <input type="radio" id="france" name="pays" value="France">
+    <label for="france">France</label><br>
+    <input type="radio" id="allemagne" name="pays" value="Allemagne">
+    <label for="allemagne">Allemagne</label><br>
+    <input type="radio" id="portugal" name="pays" value="Portugal">
+    <label for="portugal">Portugal</label><br><br>
+    <span class="erreur" id="erreur-pays"></span>
+
+    <!-- Section Couleur Préférée -->
+    <label for="couleurs">Quelle est votre couleur préférée:</label>
+    <select id="couleurs" name="couleurs">
+        <option value="valeurParDefaut">Veuillez choisir une option...</option>
+        <option value="bleu">Bleu</option>
+        <option value="blanc">Blanc</option>
+        <option value="rouge">Rouge</option>
+    </select>
+    <span class="erreur" id="erreur-couleurs"></span>
+    <br><br>
+
+    <input type="submit" value="Envoyer">
+</form>
+
+<script src="/static/js/script.js"></script>
+
+</body>
+</html>

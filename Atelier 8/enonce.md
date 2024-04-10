@@ -1,4 +1,4 @@
- cIntroduction à Python
+Introduction à Python
 =====================
 
 Apprendre un nouveau langage de programmation demande de la pratique. Dans cet

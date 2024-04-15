@@ -10,15 +10,18 @@ là où des blocs spécifiques sont définis-->
     <table id="table">
         <thead>
         <tr>
+            <!--Les en têtes-->
             <th>Nom</th>
             <th>Prénom</th>
             <th>Âge</th>
         </tr>
         </thead>
         <tbody>
-
+        <!--personnes est une liste dans app.py. Rappelez-vous du return render_template('personnes.html',
+        personnes=personnes), personnes est "injecter" ici-->
         {% for personne in personnes %}
             <tr>
+                <!--Informations de la rangée (0: Nom, 1: Prénom, 3: Age)-->
                 <td>{{ personne[0] }}</td>
                 <td>{{ personne[1] }}</td>
                 <td>{{ personne[2] }}</td>

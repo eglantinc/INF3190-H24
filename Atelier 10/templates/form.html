@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Formulaire de Création de Personne{% endblock %}
+
+{% block header %}Créer une nouvelle personne{% endblock %}
+
+{% block content %}
+    <form action="/valider" method="post" id="monFormulaire">
+        <label for="nom">Nom:</label><br>
+        <input type="text" id="nom" name="nom">
+        <span id="erreur-nom" class="erreur"></span><br>
+
+        <label for="prenom">Prénom:</label><br>
+        <input type="text" id="prenom" name="prenom">
+        <span id="erreur-prenom" class="erreur"></span><br>
+
+        <label for="age">Âge:</label><br>
+        <input type="text" id="age" name="age">
+        <span id="erreur-age" class="erreur"></span><br>
+
+        <button type="submit">Soumettre</button>
+    </form>
+{% endblock %}

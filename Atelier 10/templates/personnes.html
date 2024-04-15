@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+<!--tout le contenu de ton fichier actuel sera injecté dans le template base.html
+là où des blocs spécifiques sont définis-->
+
+{% block title %}Liste des Personnes{% endblock %}
+
+{% block header %}Liste des Personnes{% endblock %}
+
+{% block content %}
+    <table id="table">
+        <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Âge</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        {% for personne in personnes %}
+            <tr>
+                <td>{{ personne[0] }}</td>
+                <td>{{ personne[1] }}</td>
+                <td>{{ personne[2] }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <button id="btnTrier">Trier par nom</button>
+    <a href="/" class="retour-accueil">Retour à l'accueil</a>
+
+{% endblock %}
